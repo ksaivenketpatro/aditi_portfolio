@@ -1,0 +1,44 @@
+.text-container {
+    position: relative;
+    height: 100px; /* Increased height */
+    margin: 80px 0; /* Added more top margin */
+  }
+  .text-item {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    white-space: nowrap;
+    font-size: 3rem; /* Unified large font size */
+    will-change: opacity, transform;
+    font-weight: 500; /* Consistent font weight */
+    color: #4f4f4f; /* Consistent color */
+    top: 20%
+    
+  }
+  
+  .text-item.visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  
+  .text-item.hidden {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-40px); /* Larger movement */
+  }
+  
+  .text-item.final {
+    font-weight: 600; /* Only difference for final text */
+    transition: all 1.5s ease-out;
+  }
+  .final-subtitle {
+    font-size: 1.65rem;
+    font-weight: 200;
+    margin-top: 0.2rem;
+    color: #6b6b6b;
+    display: block;
+    line-height: 1.4;
+  }

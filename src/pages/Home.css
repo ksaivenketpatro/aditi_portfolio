@@ -1,0 +1,25 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.textContent {
+  text-align: center;
+  padding: 20px 0;
+  color: black;
+  z-index: 10;
+  flex-shrink: 0; /* Prevent text section from shrinking */
+}
+
+.imageSection {
+  flex-grow: 1; /* Take all remaining space */
+  width: 100%;
+  background-size: contain; /* Better image coverage */
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden; /* Extra safeguard */
+}
